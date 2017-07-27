@@ -1,0 +1,15 @@
+name: TorchLight
+version: 1.0-repack
+main: qingchenw.repack.com.TheAJ471.torch.TorchLight
+description: Add Torch Light!
+
+commands:
+   torchlight:
+      usage: '/torchlight [help|config|reload]'
+      description: 'Type "/torchlight help" to see help.'
+      permisson: 'torch.command'
+      permisson-message: 'You have not permission to run this command.'
+
+permissions:
+   torch.use:
+      description: Allow the use of Torch Light!

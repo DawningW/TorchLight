@@ -1,0 +1,63 @@
+# TorchLight's config file
+# The author was TheAJ471, reload by QingChenW.
+
+# The way of using infinite night vision
+# 'item' is using item, command is typing command
+type: item
+# Use single item or command to switch infinite night vision
+toggle: false
+
+enable:
+  # The ID of item
+  id: 'TORCH'
+  # The data of item
+  data: 0
+  # The count of item
+  count: 1
+  # The name of item
+  name: '§aOpen night vision'
+  # The lore of item
+  lore: 'OhOhOh~Infinite Night Vision'
+  # The slot of item in inventory(0~8)
+  slot: 6
+  # The sound(default is 'DEFAULT')
+  sound: 'DEFAULT'
+  
+disable:
+  # The ID of item
+  id: 'REDSTONE_TORCH_ON'
+  # The data of item
+  data: 0
+  # The count of item
+  count: 1
+  # The name of item
+  name: '§cClose night vision'
+  # The lore of item
+  lore: 'My eyes are good now'
+  # The slot of item in inventory(0~8)
+  slot: 8
+  # The sound(default is 'DEFAULT')
+  sound: 'DEFAULT'
+
+# The messages when using infinite Night Vision
+messages:
+  # open
+  enable: '[TorchLight] &aTorchLight was opened!'
+    
+  # close
+  disable: '[TorchLight] &cTorchLight was closed!'
+    
+  # blocked
+  blocked:
+    world: '[TorchLight] &4You can not use TorchLight in the world!'
+    player: '[TorchLight] &4You are not allowed to use TorchLight!'
+
+# The worlds that can't use infinite Night Vision
+blockedworld:
+  - blockedworld1
+  - blockedworld2
+  - blockedworld3
+
+# The players that can't use infinite Night Vision
+blockedplayer:
+  - blockedplayer

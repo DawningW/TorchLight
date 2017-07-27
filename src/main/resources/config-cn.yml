@@ -1,0 +1,63 @@
+# TorchLight插件配置文件
+# 原作者 TheAJ471, 由 QingChenW 重制
+
+# 以何种方式开启无限夜视
+# item 为用物品开启, command 为用命令开启
+type: item
+# 用单个物品或命令开关无限夜视
+toggle: false
+
+enable:
+  # 物品ID(请使用字符串ID)
+  id: 'TORCH'
+  # 物品数据值
+  data: 0
+  # 物品数量
+  count: 1
+  # 物品名称
+  name: '§a开启夜视'
+  # 物品信息
+  lore: '夜猫子夜猫子耶耶耶~'
+  # 物品栏序号(0~8)
+  slot: 6
+  # 声音(DEFAULT为默认)
+  sound: 'DEFAULT'
+  
+disable:
+  # 物品ID(请使用字符串ID)
+  id: 'REDSTONE_TORCH_ON'
+  # 物品数据值
+  data: 0
+  # 物品数量
+  count: 1
+  # 物品名称
+  name: '§c关闭夜视'
+  # 物品信息
+  lore: '麻麻再也不怕我眼瞎了~'
+  # 物品栏序号(0~8)
+  slot: 8
+  # 声音(DEFAULT为默认)
+  sound: 'DEFAULT'
+
+# 使用无限夜视时的提示
+messages:
+  # 开启无限夜视提示
+  enable: '[TorchLight] &a无限夜视已开启!'
+    
+  # 关闭无限夜视提示
+  disable: '[TorchLight] &c无限夜视已关闭!'
+    
+  # 无限夜视被禁用提示
+  blocked:
+    world: '[TorchLight] &4你不能在这个世界使用无限夜视!'
+    player: '[TorchLight] &4你被禁止使用无限夜视!'
+
+# 禁用无限夜视的世界
+blockedworld:
+  - blockedworld1
+  - blockedworld2
+  - blockedworld3
+
+# 禁用无限夜视的玩家
+blockedplayer:
+  - blockedplayer
